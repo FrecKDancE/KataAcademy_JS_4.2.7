@@ -1,0 +1,67 @@
+body {
+    margin: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    display: block;
+    
+}
+
+input[type="text"]:focus {
+    border-color: #4a4a4a;
+    outline: none;
+}
+
+.autocomplete-list {
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    background: white;
+    width: 100%;
+    margin: 5px auto;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #77d4ff;
+}
+
+.repo-list {
+    margin-top: 20px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.repo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.repo-info {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.remove-button {
+    cursor: pointer;
+    color: #d9534f;
+    font-weight: bold;
+    transition: color 0.3s;
+}
